@@ -31,6 +31,21 @@ Abra o projeto no VScode manualmente, ou pelo terminal executando:
 code .
 ```
 
+Abra o arquivo .env e defina a string de conexão do banco de dados:
+```
+ex: mysql://host=host,port;database=database;user=user;pwd=pwd/schema=database
+```
+
+Execute o comando prisma que tras todas as tabelas do seu db
+```
+npx prisma db pull
+```
+
+E execute o comando que gera o client prisma com base nos schemas gerados.
+```
+npx prisma generate
+```
+
 ### 🖌 Estilo de código
 
 Neste projeto o eslint junto do prettier fornecem um conjunto de regras
